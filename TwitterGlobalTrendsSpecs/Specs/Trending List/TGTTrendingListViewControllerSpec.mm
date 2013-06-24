@@ -42,7 +42,7 @@ describe(@"TUTUserTimelineViewController", ^{
         __block id mockBearerObtainer;
 
         beforeEach(^{
-            mockBearerObtainer = mock([TGTBearerObtainer class]);
+            mockBearerObtainer = mock([TUTBearerObtainer class]);
 
             trendingListViewController.twitterAPIWrapper = nil;
 
