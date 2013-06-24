@@ -4,13 +4,13 @@
 
 
 #import <STTwitter/STTwitterAPIWrapper.h>
-#import "TGTBearerObtainer.h"
+#import "TUTBearerObtainer.h"
 
 
-@implementation TGTBearerObtainer
+@implementation TUTBearerObtainer
 
 + (instancetype)obtainerWithTwitterAPIWrapper:(STTwitterAPIWrapper *)wrapper {
-    TGTBearerObtainer *bearerObtainer = [[self alloc] init];
+    TUTBearerObtainer *bearerObtainer = [[self alloc] init];
     bearerObtainer.apiWrapper = wrapper;
     return bearerObtainer;
 }

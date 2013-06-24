@@ -6,15 +6,15 @@
 #import <Foundation/Foundation.h>
 
 @class STTwitterAPIWrapper;
-@class TGTBearerObtainer;
+@class TUTBearerObtainer;
 
 @protocol TUTBearerObtainerDelegate <NSObject>
 
-- (void)bearerObtainer:(TGTBearerObtainer *)obtainer didObtainBearerToken:(NSString *)token;
+- (void)bearerObtainer:(TUTBearerObtainer *)obtainer didObtainBearerToken:(NSString *)token;
 
 @end
 
-@interface TGTBearerObtainer : NSObject
+@interface TUTBearerObtainer : NSObject
 @property(nonatomic, weak) id <TUTBearerObtainerDelegate> delegate;
 @property(nonatomic, strong) STTwitterAPIWrapper *apiWrapper;
 

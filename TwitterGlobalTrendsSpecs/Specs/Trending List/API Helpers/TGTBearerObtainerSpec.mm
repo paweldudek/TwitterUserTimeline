@@ -1,17 +1,17 @@
 #import <Cedar-iOS/SpecHelper.h>
 #import <STTwitter/STTwitterAPIWrapper.h>
 
-#import "TGTBearerObtainer.h"
+#import "TUTBearerObtainer.h"
 
 using namespace Cedar::Matchers;
 
 SPEC_BEGIN(TGTBearerObtainerSpec)
 
-describe(@"TGTBearerObtainer", ^{
-    __block TGTBearerObtainer *bearerObtainer;
+describe(@"TUTBearerObtainer", ^{
+    __block TUTBearerObtainer *bearerObtainer;
     
     beforeEach(^{
-        bearerObtainer = [TGTBearerObtainer obtainerWithTwitterAPIWrapper:nil];
+        bearerObtainer = [TUTBearerObtainer obtainerWithTwitterAPIWrapper:nil];
     });
 
     describe(@"obtain bearer", ^{

@@ -4,15 +4,15 @@
 
 
 #import <Foundation/Foundation.h>
-#import "TGTBearerObtainer.h"
+#import "TUTBearerObtainer.h"
 
-@class TGTBearerObtainer;
+@class TUTBearerObtainer;
 
 
 @interface TUTUserTimelineViewController : UIViewController <TUTBearerObtainerDelegate, UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) id twitterAPIWrapper;
 @property(nonatomic, copy) NSString *bearerToken;
-@property(nonatomic, strong) TGTBearerObtainer *bearerObtainer;
+@property(nonatomic, strong) TUTBearerObtainer *bearerObtainer;
 @property(nonatomic, strong) NSArray *statuses;
 @property(nonatomic, strong) UITableView *tableView;
 @end

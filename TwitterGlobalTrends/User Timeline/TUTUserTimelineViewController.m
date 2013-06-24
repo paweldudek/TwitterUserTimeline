@@ -7,7 +7,7 @@
 #import "STTwitterAPIWrapper.h"
 #import "STTwitterOAuthProtocol.h"
 #import "STTwitterAppOnly.h"
-#import "TGTBearerObtainer.h"
+#import "TUTBearerObtainer.h"
 #import "MTLJSONAdapter.h"
 #import "TUTTwitterStatus.h"
 
@@ -19,7 +19,7 @@
         self.twitterAPIWrapper = [STTwitterAPIWrapper twitterAPIApplicationOnlyWithConsumerKey:@"aCxyQ1aWHicXTbBCg4jQ"
                                                                                 consumerSecret:@"15whlIaMrHCzOb0BnO2bvrHCnbggbFB866Q7HSWygk8"];
 
-        self.bearerObtainer = [TGTBearerObtainer obtainerWithTwitterAPIWrapper:self.twitterAPIWrapper];
+        self.bearerObtainer = [TUTBearerObtainer obtainerWithTwitterAPIWrapper:self.twitterAPIWrapper];
         self.bearerObtainer.delegate = self;
     }
     return self;
@@ -42,7 +42,7 @@
 
 #pragma mark - Bearer Obtainer Delegate
 
-- (void)bearerObtainer:(TGTBearerObtainer *)obtainer didObtainBearerToken:(NSString *)token {
+- (void)bearerObtainer:(TUTBearerObtainer *)obtainer didObtainBearerToken:(NSString *)token {
     [self.twitterAPIWrapper getUserTimelineWithScreenName:@"eldudi" count:5
                                              successBlock:^(NSArray *statuses) {
                                                  [self parseStatuses:statuses];

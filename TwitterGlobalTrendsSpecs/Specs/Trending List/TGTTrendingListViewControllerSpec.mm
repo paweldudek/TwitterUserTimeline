@@ -23,7 +23,7 @@ describe(@"TUTUserTimelineViewController", ^{
 
     describe(@"bearer obtainer", ^{
 
-        __block TGTBearerObtainer *bearerObtainer;
+        __block TUTBearerObtainer *bearerObtainer;
 
         beforeEach(^{
             bearerObtainer = trendingListViewController.bearerObtainer;
