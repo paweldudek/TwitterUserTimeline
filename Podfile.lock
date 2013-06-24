@@ -1,0 +1,24 @@
+PODS:
+  - Cedar (0.9.1)
+  - libextobjc/EXTKeyPathCoding (0.2.5):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.2.5):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.2.5)
+  - Mantle (1.1):
+    - libextobjc/EXTKeyPathCoding
+    - libextobjc/EXTScope
+  - STTwitter (0.0.1)
+
+DEPENDENCIES:
+  - Cedar
+  - Mantle
+  - STTwitter
+
+SPEC CHECKSUMS:
+  Cedar: a4181d8873d5049223c8511a50de4151ad603edc
+  libextobjc: 2cbc74caf8bdc74a86fdf24673f773c83424ea98
+  Mantle: aba2facc6ee8f97512a94768dc57c82b7802948c
+  STTwitter: f0a0eb51fea658dd50879f9c8bc2128cff7cd8e0
+
+COCOAPODS: 0.19.1

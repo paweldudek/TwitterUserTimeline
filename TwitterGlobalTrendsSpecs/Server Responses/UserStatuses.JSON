@@ -1,0 +1,180 @@
+[
+    {
+        "created_at": "Tue Jun 11 22:26:50 +0000 2013",
+        "id": 344581518833905660,
+        "id_str": "344581518833905664",
+        "text": "Fixture Status Text",
+        "source": "web",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 6253282,
+            "id_str": "6253282",
+            "name": "Twitter API",
+            "screen_name": "twitterapi",
+            "location": "San Francisco, CA",
+            "description": "The Real Twitter API. I tweet about API changes, service issues and happily answer questions about Twitter and our API. Don't get an answer? It's on my website.",
+            "url": "http://t.co/78pYTvWfJd",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/78pYTvWfJd",
+                            "expanded_url": "http://dev.twitter.com",
+                            "display_url": "dev.twitter.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1710057,
+            "friends_count": 33,
+            "listed_count": 11749,
+            "created_at": "Wed May 23 06:01:13 +0000 2007",
+            "favourites_count": 25,
+            "utc_offset": -28800,
+            "time_zone": "Pacific Time (US & Canada)",
+            "geo_enabled": true,
+            "verified": true,
+            "statuses_count": 3439,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "profile_background_color": "C0DEED",
+            "profile_background_image_url": "http://a0.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png",
+            "profile_background_tile": true,
+            "profile_image_url": "http://a0.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/6253282/1347394302",
+            "profile_link_color": "0084B4",
+            "profile_sidebar_border_color": "C0DEED",
+            "profile_sidebar_fill_color": "DDEEF6",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": false,
+            "notifications": null
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweet_count": 1514,
+        "favorite_count": 353,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "urls": [
+                {
+                    "url": "https://t.co/SIzTAymJPW",
+                    "expanded_url": "https://dev.twitter.com/blog/api-v1-is-retired",
+                    "display_url": "dev.twitter.com/blog/api-v1-is…",
+                    "indices": [
+                        77,
+                        100
+                    ]
+                }
+            ],
+            "user_mentions": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Tue Jun 11 21:58:42 +0000 2013",
+        "id": 344574437674328060,
+        "id_str": "344574437674328064",
+        "text": "As part of the retirement plan today, we're also about to discontinue Basic Auth support for unelevated Streaming API roles. Use OAuth 1.0A.",
+        "source": "web",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 6253282,
+            "id_str": "6253282",
+            "name": "Twitter API",
+            "screen_name": "twitterapi",
+            "location": "San Francisco, CA",
+            "description": "The Real Twitter API. I tweet about API changes, service issues and happily answer questions about Twitter and our API. Don't get an answer? It's on my website.",
+            "url": "http://t.co/78pYTvWfJd",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "http://t.co/78pYTvWfJd",
+                            "expanded_url": "http://dev.twitter.com",
+                            "display_url": "dev.twitter.com",
+                            "indices": [
+                                0,
+                                22
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 1710057,
+            "friends_count": 33,
+            "listed_count": 11749,
+            "created_at": "Wed May 23 06:01:13 +0000 2007",
+            "favourites_count": 25,
+            "utc_offset": -28800,
+            "time_zone": "Pacific Time (US & Canada)",
+            "geo_enabled": true,
+            "verified": true,
+            "statuses_count": 3439,
+            "lang": "en",
+            "contributors_enabled": false,
+            "is_translator": false,
+            "profile_background_color": "C0DEED",
+            "profile_background_image_url": "http://a0.twimg.com/profile_background_images/656927849/miyt9dpjz77sc0w3d4vj.png",
+            "profile_background_tile": true,
+            "profile_image_url": "http://a0.twimg.com/profile_images/2284174872/7df3h38zabcvjylnyfe3_normal.png",
+            "profile_link_color": "0084B4",
+            "profile_sidebar_border_color": "C0DEED",
+            "profile_sidebar_fill_color": "DDEEF6",
+            "profile_text_color": "333333",
+            "profile_use_background_image": true,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": false,
+            "notifications": null
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweet_count": 112,
+        "favorite_count": 37,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "urls": [],
+            "user_mentions": []
+        },
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    }
+]
