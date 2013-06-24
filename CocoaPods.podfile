@@ -6,5 +6,7 @@ pod 'Mantle'
 
 target :cedar do
 	link_with 'TwitterUserTimelineSpecs'
-    pod 'Cedar'
+    pod 'Cedar-Taptera'
+    pod 'Expecta'
+    pod 'OCMockito'
 end
