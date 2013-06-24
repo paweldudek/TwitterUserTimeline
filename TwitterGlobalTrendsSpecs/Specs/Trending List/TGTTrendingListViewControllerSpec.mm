@@ -6,6 +6,9 @@
 #import "FakeTwitterAPIWrapper.h"
 #import "TUTTwitterStatus.h"
 
+#define MOCKITO_SHORTHAND
+#import "OCMockito.h"
+
 using namespace Cedar::Matchers;
 
 SPEC_BEGIN(TGTTrendingListViewControllerSpec)
@@ -35,14 +38,19 @@ describe(@"TUTUserTimelineViewController", ^{
     });
 
     describe(@"view will appear", ^{
+
+        __block id mockBearerObtainer;
+
         beforeEach(^{
+            mockBearerObtainer = mock([TGTBearerObtainer class]);
+
             trendingListViewController.twitterAPIWrapper = nil;
 
             [trendingListViewController viewWillAppear:NO];
         });
 
         it(@"should tell the bearer to obtain the token", ^{
-              //TODO
+            [verify(mockBearerObtainer) obtainBearer];
         });
     });
 
@@ -54,7 +62,9 @@ describe(@"TUTUserTimelineViewController", ^{
             beforeEach(^{
                 fakeAPIWrapper = [FakeTwitterAPIWrapper fakeWrapper];
                 trendingListViewController.twitterAPIWrapper = fakeAPIWrapper;
+            });
 
+            action(^{
                 [trendingListViewController bearerObtainer:nil didObtainBearerToken:nil];
             });
 
@@ -63,12 +73,17 @@ describe(@"TUTUserTimelineViewController", ^{
             });
 
             describe(@"when obtaining is successful", ^{
+
+                __block id statuses;
+
                 beforeEach(^{
                     NSString *path = [[NSBundle mainBundle] pathForResource:@"UserStatuses" ofType:@"JSON"];
                     NSData *response = [NSData dataWithContentsOfFile:path];
 
-                    id statuses = [NSJSONSerialization JSONObjectWithData:response options:0 error:nil];
+                    statuses = [NSJSONSerialization JSONObjectWithData:response options:0 error:nil];
+                });
 
+                action(^{
                     [fakeAPIWrapper simulateUserTimelineDownloadWithStatuses:statuses];
                 });
 
@@ -76,7 +91,7 @@ describe(@"TUTUserTimelineViewController", ^{
 
                     __block NSArray *statuses;
 
-                    beforeEach(^{
+                    action(^{
                         statuses = [trendingListViewController statuses];
                     });
 
@@ -106,6 +121,9 @@ describe(@"TUTUserTimelineViewController", ^{
                 TUTTwitterStatus *status = [[TUTTwitterStatus alloc] init];
                 trendingListViewController.statuses = @[status];
 
+            });
+
+            action(^{
                 numberOfRowsInSection = [trendingListViewController tableView:nil numberOfRowsInSection:0];
             });
 
@@ -117,9 +135,13 @@ describe(@"TUTUserTimelineViewController", ^{
         describe(@"cell for row", ^{
 
             __block UITableViewCell *tableViewCell;
+            __block NSIndexPath *indexPath;
 
             beforeEach(^{
-                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+                indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+            });
+
+            action(^{
                 tableViewCell = [trendingListViewController tableView:nil cellForRowAtIndexPath:indexPath];
             });
 
