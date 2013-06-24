@@ -1,6 +1,5 @@
 #import <Cedar-iOS/SpecHelper.h>
 #import <STTwitter/STTwitterAPIWrapper.h>
-#import <UIKit/UIKit.h>
 
 #import "TUTUserTimelineViewController.h"
 #import "FakeTwitterAPIWrapper.h"
@@ -9,7 +8,8 @@
 #define MOCKITO_SHORTHAND
 #import "OCMockito.h"
 
-using namespace Cedar::Matchers;
+#define EXP_SHORTHAND
+#import "Expecta.h"
 
 SPEC_BEGIN(TGTTrendingListViewControllerSpec)
 
@@ -21,7 +21,7 @@ describe(@"TUTUserTimelineViewController", ^{
     });
 
     it(@"should have a twitter client", ^{
-        expect(trendingListViewController.twitterAPIWrapper).to(be_instance_of([STTwitterAPIWrapper class]));
+        expect(trendingListViewController.twitterAPIWrapper).to.beKindOf([STTwitterAPIWrapper class]);
     });
 
     describe(@"bearer obtainer", ^{
@@ -33,7 +33,7 @@ describe(@"TUTUserTimelineViewController", ^{
         });
 
         it(@"should have a twitter api wrapper", ^{
-            expect(bearerObtainer.apiWrapper).to(equal(trendingListViewController.twitterAPIWrapper));
+            expect(bearerObtainer.apiWrapper).to.equal(trendingListViewController.twitterAPIWrapper);
         });
     });
 
@@ -43,9 +43,10 @@ describe(@"TUTUserTimelineViewController", ^{
 
         beforeEach(^{
             mockBearerObtainer = mock([TUTBearerObtainer class]);
+            trendingListViewController.bearerObtainer = mockBearerObtainer;
+        });
 
-            trendingListViewController.twitterAPIWrapper = nil;
-
+        action(^{
             [trendingListViewController viewWillAppear:NO];
         });
 
@@ -69,7 +70,7 @@ describe(@"TUTUserTimelineViewController", ^{
             });
 
             it(@"should start downloading the timeline for user", ^{
-                expect(fakeAPIWrapper.lastScreenName).to(equal(@"eldudi"));
+                expect(fakeAPIWrapper.lastScreenName).to.equal(@"eldudi");
             });
 
             describe(@"when obtaining is successful", ^{
@@ -99,12 +100,12 @@ describe(@"TUTUserTimelineViewController", ^{
 
                         __block TUTTwitterStatus *status;
 
-                        beforeEach(^{
+                        action(^{
                             status = statuses[0];
                         });
 
                         it(@"should have a text", ^{
-                            expect(status.text).to(equal(@"Fixture Status Text"));
+                            expect(status.text).to.equal(@"Fixture Status Text");
                         });
                     });
                 });
@@ -120,7 +121,6 @@ describe(@"TUTUserTimelineViewController", ^{
             beforeEach(^{
                 TUTTwitterStatus *status = [[TUTTwitterStatus alloc] init];
                 trendingListViewController.statuses = @[status];
-
             });
 
             action(^{
@@ -128,7 +128,7 @@ describe(@"TUTUserTimelineViewController", ^{
             });
 
             it(@"should equal number of statuses", ^{
-                expect(numberOfRowsInSection).to(equal(1));
+                expect(numberOfRowsInSection).to.equal(1);
             });
         });
 
@@ -146,7 +146,7 @@ describe(@"TUTUserTimelineViewController", ^{
             });
 
             it(@"should return a table view cell", ^{
-                expect(tableViewCell).to(be_instance_of([UITableViewCell class]));
+                expect(tableViewCell).to.beKindOf(([UITableViewCell class]));
             });
         });
     });

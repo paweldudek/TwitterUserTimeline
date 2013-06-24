@@ -31,7 +31,7 @@
 		B27A96293BFDD065D25C8176 /* TUTTwitterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A91DB7B3988997ABF8FFD /* TUTTwitterStatus.m */; };
 		B27A975B50E81932B6167F65 /* FakeTwitterAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9AE70689A6D03788D33A /* FakeTwitterAPIWrapper.m */; };
 		B27A9917745DF4AB5D7B40D7 /* UserStatuses.JSON in Resources */ = {isa = PBXBuildFile; fileRef = B27A958054B8179040623364 /* UserStatuses.JSON */; };
-		B27A99593000D79F2BB1A7B7 /* TGTTrendingListViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = B27A99B5944BE33144C4E249 /* TGTTrendingListViewControllerSpec.mm */; };
+		B27A99593000D79F2BB1A7B7 /* TGTTrendingListViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A99B5944BE33144C4E249 /* TGTTrendingListViewControllerSpec.m */; };
 		B27A9A0F14E7D9D7B4529F0D /* TUTUserTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A90E284766DD03CFC7709 /* TUTUserTimelineViewController.m */; };
 		B27A9B11B28C93243BFD33B0 /* TUTBearerObtainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9B52256E51F3900FCAA6 /* TUTBearerObtainer.m */; };
 		B27A9D448273D76B41122154 /* TUTTwitterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A91DB7B3988997ABF8FFD /* TUTTwitterStatus.m */; };
@@ -42,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		020714B9AFE942C29E0D1FA9 /* Pods-kiwi.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kiwi.xcconfig"; path = "Pods/Pods-kiwi.xcconfig"; sourceTree = SOURCE_ROOT; };
-		07A18A3969824CE694C42891 /* Pods-TwitterGlobalTrendsTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterGlobalTrendsTests.xcconfig"; path = "Pods/Pods-TwitterGlobalTrendsTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		24A4BFF3460D4209B2B7511F /* libPods-TwitterGlobalTrendsSpecs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwitterGlobalTrendsSpecs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2867D06D46B24D6BAF9B05AC /* libPods-kiwi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-kiwi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		437BAEB7177835120063204A /* TwitterUserTimeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterUserTimeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,11 +73,10 @@
 		B27A94C67A15EB9C6B1797B3 /* TUTTwitterStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTTwitterStatus.h; sourceTree = "<group>"; };
 		B27A958054B8179040623364 /* UserStatuses.JSON */ = {isa = PBXFileReference; lastKnownFileType = file.JSON; path = UserStatuses.JSON; sourceTree = "<group>"; };
 		B27A991F451B907AC83E04BE /* TGTBearerObtainerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TGTBearerObtainerSpec.mm; sourceTree = "<group>"; };
-		B27A99B5944BE33144C4E249 /* TGTTrendingListViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TGTTrendingListViewControllerSpec.mm; sourceTree = "<group>"; };
+		B27A99B5944BE33144C4E249 /* TGTTrendingListViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTTrendingListViewControllerSpec.m; sourceTree = "<group>"; };
 		B27A9AE70689A6D03788D33A /* FakeTwitterAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeTwitterAPIWrapper.m; sourceTree = "<group>"; };
 		B27A9B52256E51F3900FCAA6 /* TUTBearerObtainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTBearerObtainer.m; sourceTree = "<group>"; };
 		B27A9DEE023F09A9CFE95698 /* FakeTwitterAPIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeTwitterAPIWrapper.h; sourceTree = "<group>"; };
-		DE85893DE95C45FE8F1B8BFF /* Pods-TwitterGlobalTrendsSpecs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterGlobalTrendsSpecs.xcconfig"; path = "Pods/Pods-TwitterGlobalTrendsSpecs.xcconfig"; sourceTree = SOURCE_ROOT; };
 		E6811CC19EAF47AA987A411F /* libPods-cedar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-cedar.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,8 +115,6 @@
 				437BAEB9177835120063204A /* Frameworks */,
 				437BAEB8177835120063204A /* Products */,
 				78B004F59A9D4E2D9C1FAE4C /* Pods.xcconfig */,
-				DE85893DE95C45FE8F1B8BFF /* Pods-TwitterGlobalTrendsSpecs.xcconfig */,
-				07A18A3969824CE694C42891 /* Pods-TwitterGlobalTrendsTests.xcconfig */,
 				A277FE1367B848E98865B1C6 /* Pods-cedar.xcconfig */,
 				020714B9AFE942C29E0D1FA9 /* Pods-kiwi.xcconfig */,
 			);
@@ -224,7 +220,7 @@
 		B27A97921F7F871AB07A8FB2 /* Trending List */ = {
 			isa = PBXGroup;
 			children = (
-				B27A99B5944BE33144C4E249 /* TGTTrendingListViewControllerSpec.mm */,
+				B27A99B5944BE33144C4E249 /* TGTTrendingListViewControllerSpec.m */,
 				B27A9E4BBBA07FE7E4047D4A /* API Helpers */,
 			);
 			path = "Trending List";
@@ -500,7 +496,7 @@
 				437BAEF41778A88A0063204A /* TUTAppDelegate.m in Sources */,
 				437BAF061778A9600063204A /* main.m in Sources */,
 				B27A9079C1A9A00EFD6ECA02 /* TUTUserTimelineViewController.m in Sources */,
-				B27A99593000D79F2BB1A7B7 /* TGTTrendingListViewControllerSpec.mm in Sources */,
+				B27A99593000D79F2BB1A7B7 /* TGTTrendingListViewControllerSpec.m in Sources */,
 				B27A9B11B28C93243BFD33B0 /* TUTBearerObtainer.m in Sources */,
 				B27A975B50E81932B6167F65 /* FakeTwitterAPIWrapper.m in Sources */,
 				B27A9EED08D94D90D3895F33 /* TGTBearerObtainerSpec.mm in Sources */,

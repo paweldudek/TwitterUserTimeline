@@ -34,7 +34,7 @@
     self.tableView = tableView;
 }
 
-- (void)viewDidAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated {
     [super viewDidAppear:animated];
 
     [self.bearerObtainer obtainBearer];
