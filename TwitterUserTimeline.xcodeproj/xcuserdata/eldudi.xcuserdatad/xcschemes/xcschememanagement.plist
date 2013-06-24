@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TwitterGlobalTrends.xcscheme</key>
+		<key>TwitterUserTimeline.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>TwitterGlobalTrendsSpecs.xcscheme</key>
+		<key>TwitterUserTimelineSpecs.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>

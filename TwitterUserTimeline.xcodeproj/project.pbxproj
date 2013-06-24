@@ -12,11 +12,11 @@
 		437BAEBF177835120063204A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437BAEBE177835120063204A /* CoreGraphics.framework */; };
 		437BAEC5177835120063204A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 437BAEC3177835120063204A /* InfoPlist.strings */; };
 		437BAEC7177835120063204A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BAEC6177835120063204A /* main.m */; };
-		437BAECB177835120063204A /* TGTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BAECA177835120063204A /* TGTAppDelegate.m */; };
+		437BAECB177835120063204A /* TUTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BAECA177835120063204A /* TUTAppDelegate.m */; };
 		437BAECD177835120063204A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 437BAECC177835120063204A /* Default.png */; };
 		437BAECF177835120063204A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437BAECE177835120063204A /* Default@2x.png */; };
 		437BAED1177835120063204A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437BAED0177835120063204A /* Default-568h@2x.png */; };
-		437BAEF41778A88A0063204A /* TGTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BAECA177835120063204A /* TGTAppDelegate.m */; };
+		437BAEF41778A88A0063204A /* TUTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BAECA177835120063204A /* TUTAppDelegate.m */; };
 		437BAEF61778A88A0063204A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437BAEBA177835120063204A /* UIKit.framework */; };
 		437BAEF71778A88A0063204A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437BAEBC177835120063204A /* Foundation.framework */; };
 		437BAEF81778A88A0063204A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437BAEBE177835120063204A /* CoreGraphics.framework */; };
@@ -26,15 +26,15 @@
 		437BAEFE1778A88A0063204A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437BAED0177835120063204A /* Default-568h@2x.png */; };
 		437BAF061778A9600063204A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BAF051778A9600063204A /* main.m */; };
 		825B07275F384CFE931C690B /* libPods-cedar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6811CC19EAF47AA987A411F /* libPods-cedar.a */; };
-		B27A9079C1A9A00EFD6ECA02 /* TGTTrendingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A90E284766DD03CFC7709 /* TGTTrendingListViewController.m */; };
+		B27A9079C1A9A00EFD6ECA02 /* TUTUserTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A90E284766DD03CFC7709 /* TUTUserTimelineViewController.m */; };
 		B27A94FE9C6B4A973DE8C5B0 /* TGTBearerObtainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9B52256E51F3900FCAA6 /* TGTBearerObtainer.m */; };
-		B27A96293BFDD065D25C8176 /* TGTTwitterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A91DB7B3988997ABF8FFD /* TGTTwitterStatus.m */; };
+		B27A96293BFDD065D25C8176 /* TUTTwitterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A91DB7B3988997ABF8FFD /* TUTTwitterStatus.m */; };
 		B27A975B50E81932B6167F65 /* FakeTwitterAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9AE70689A6D03788D33A /* FakeTwitterAPIWrapper.m */; };
 		B27A9917745DF4AB5D7B40D7 /* UserStatuses.JSON in Resources */ = {isa = PBXBuildFile; fileRef = B27A958054B8179040623364 /* UserStatuses.JSON */; };
 		B27A99593000D79F2BB1A7B7 /* TGTTrendingListViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = B27A99B5944BE33144C4E249 /* TGTTrendingListViewControllerSpec.mm */; };
-		B27A9A0F14E7D9D7B4529F0D /* TGTTrendingListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A90E284766DD03CFC7709 /* TGTTrendingListViewController.m */; };
+		B27A9A0F14E7D9D7B4529F0D /* TUTUserTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A90E284766DD03CFC7709 /* TUTUserTimelineViewController.m */; };
 		B27A9B11B28C93243BFD33B0 /* TGTBearerObtainer.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9B52256E51F3900FCAA6 /* TGTBearerObtainer.m */; };
-		B27A9D448273D76B41122154 /* TGTTwitterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A91DB7B3988997ABF8FFD /* TGTTwitterStatus.m */; };
+		B27A9D448273D76B41122154 /* TUTTwitterStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A91DB7B3988997ABF8FFD /* TUTTwitterStatus.m */; };
 		B27A9E8C48E58877DBCE1358 /* FakeTwitterAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B27A9AE70689A6D03788D33A /* FakeTwitterAPIWrapper.m */; };
 		B27A9EED08D94D90D3895F33 /* TGTBearerObtainerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = B27A991F451B907AC83E04BE /* TGTBearerObtainerSpec.mm */; };
 		CBFD93E9FB1649CBB2A531BD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65597968DCA146D188C491A1 /* libPods.a */; };
@@ -53,8 +53,8 @@
 		437BAEC4177835120063204A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		437BAEC6177835120063204A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		437BAEC8177835120063204A /* TwitterUserTimeline-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwitterUserTimeline-Prefix.pch"; sourceTree = "<group>"; };
-		437BAEC9177835120063204A /* TGTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TGTAppDelegate.h; sourceTree = "<group>"; };
-		437BAECA177835120063204A /* TGTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TGTAppDelegate.m; sourceTree = "<group>"; };
+		437BAEC9177835120063204A /* TUTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TUTAppDelegate.h; sourceTree = "<group>"; };
+		437BAECA177835120063204A /* TUTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TUTAppDelegate.m; sourceTree = "<group>"; };
 		437BAECC177835120063204A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		437BAECE177835120063204A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		437BAED0177835120063204A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -67,11 +67,11 @@
 		70A52798F8164FA68A520D54 /* libPods-TwitterGlobalTrendsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwitterGlobalTrendsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78B004F59A9D4E2D9C1FAE4C /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		A277FE1367B848E98865B1C6 /* Pods-cedar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cedar.xcconfig"; path = "Pods/Pods-cedar.xcconfig"; sourceTree = SOURCE_ROOT; };
-		B27A90E284766DD03CFC7709 /* TGTTrendingListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTTrendingListViewController.m; sourceTree = "<group>"; };
-		B27A91DB7B3988997ABF8FFD /* TGTTwitterStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTTwitterStatus.m; sourceTree = "<group>"; };
-		B27A936F198583194FCF9791 /* TGTTrendingListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTTrendingListViewController.h; sourceTree = "<group>"; };
+		B27A90E284766DD03CFC7709 /* TUTUserTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTUserTimelineViewController.m; sourceTree = "<group>"; };
+		B27A91DB7B3988997ABF8FFD /* TUTTwitterStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TUTTwitterStatus.m; sourceTree = "<group>"; };
+		B27A936F198583194FCF9791 /* TUTUserTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTUserTimelineViewController.h; sourceTree = "<group>"; };
 		B27A93709C64F912A424930A /* TGTBearerObtainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTBearerObtainer.h; sourceTree = "<group>"; };
-		B27A94C67A15EB9C6B1797B3 /* TGTTwitterStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTTwitterStatus.h; sourceTree = "<group>"; };
+		B27A94C67A15EB9C6B1797B3 /* TUTTwitterStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TUTTwitterStatus.h; sourceTree = "<group>"; };
 		B27A958054B8179040623364 /* UserStatuses.JSON */ = {isa = PBXFileReference; lastKnownFileType = file.JSON; path = UserStatuses.JSON; sourceTree = "<group>"; };
 		B27A991F451B907AC83E04BE /* TGTBearerObtainerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TGTBearerObtainerSpec.mm; sourceTree = "<group>"; };
 		B27A99B5944BE33144C4E249 /* TGTTrendingListViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TGTTrendingListViewControllerSpec.mm; sourceTree = "<group>"; };
@@ -152,10 +152,10 @@
 		437BAEC0177835120063204A /* TwitterGlobalTrends */ = {
 			isa = PBXGroup;
 			children = (
-				437BAEC9177835120063204A /* TGTAppDelegate.h */,
-				437BAECA177835120063204A /* TGTAppDelegate.m */,
+				437BAEC9177835120063204A /* TUTAppDelegate.h */,
+				437BAECA177835120063204A /* TUTAppDelegate.m */,
 				437BAEC1177835120063204A /* Supporting Files */,
-				B27A9ED4B0326DC0D9881378 /* Trending List */,
+				B27A9ED4B0326DC0D9881378 /* User Timeline */,
 				B27A9921314F291D1E8F3947 /* Model */,
 			);
 			path = TwitterGlobalTrends;
@@ -233,8 +233,8 @@
 		B27A9921314F291D1E8F3947 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B27A91DB7B3988997ABF8FFD /* TGTTwitterStatus.m */,
-				B27A94C67A15EB9C6B1797B3 /* TGTTwitterStatus.h */,
+				B27A91DB7B3988997ABF8FFD /* TUTTwitterStatus.m */,
+				B27A94C67A15EB9C6B1797B3 /* TUTTwitterStatus.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,14 +255,14 @@
 			path = "API Helpers";
 			sourceTree = "<group>";
 		};
-		B27A9ED4B0326DC0D9881378 /* Trending List */ = {
+		B27A9ED4B0326DC0D9881378 /* User Timeline */ = {
 			isa = PBXGroup;
 			children = (
-				B27A90E284766DD03CFC7709 /* TGTTrendingListViewController.m */,
-				B27A936F198583194FCF9791 /* TGTTrendingListViewController.h */,
+				B27A90E284766DD03CFC7709 /* TUTUserTimelineViewController.m */,
+				B27A936F198583194FCF9791 /* TUTUserTimelineViewController.h */,
 				B27A91541C8EE2A4B98125D9 /* API Helpers */,
 			);
-			path = "Trending List";
+			path = "User Timeline";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,11 +485,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				437BAEC7177835120063204A /* main.m in Sources */,
-				437BAECB177835120063204A /* TGTAppDelegate.m in Sources */,
-				B27A9A0F14E7D9D7B4529F0D /* TGTTrendingListViewController.m in Sources */,
+				437BAECB177835120063204A /* TUTAppDelegate.m in Sources */,
+				B27A9A0F14E7D9D7B4529F0D /* TUTUserTimelineViewController.m in Sources */,
 				B27A94FE9C6B4A973DE8C5B0 /* TGTBearerObtainer.m in Sources */,
 				B27A9E8C48E58877DBCE1358 /* FakeTwitterAPIWrapper.m in Sources */,
-				B27A9D448273D76B41122154 /* TGTTwitterStatus.m in Sources */,
+				B27A9D448273D76B41122154 /* TUTTwitterStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,14 +497,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				437BAEF41778A88A0063204A /* TGTAppDelegate.m in Sources */,
+				437BAEF41778A88A0063204A /* TUTAppDelegate.m in Sources */,
 				437BAF061778A9600063204A /* main.m in Sources */,
-				B27A9079C1A9A00EFD6ECA02 /* TGTTrendingListViewController.m in Sources */,
+				B27A9079C1A9A00EFD6ECA02 /* TUTUserTimelineViewController.m in Sources */,
 				B27A99593000D79F2BB1A7B7 /* TGTTrendingListViewControllerSpec.mm in Sources */,
 				B27A9B11B28C93243BFD33B0 /* TGTBearerObtainer.m in Sources */,
 				B27A975B50E81932B6167F65 /* FakeTwitterAPIWrapper.m in Sources */,
 				B27A9EED08D94D90D3895F33 /* TGTBearerObtainerSpec.mm in Sources */,
-				B27A96293BFDD065D25C8176 /* TGTTwitterStatus.m in Sources */,
+				B27A96293BFDD065D25C8176 /* TUTTwitterStatus.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,7 +610,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TwitterGlobalTrends/TwitterGlobalTrends-Prefix.pch";
+				GCC_PREFIX_HEADER = "TwitterGlobalTrends/TwitterUserTimeline-Prefix.pch";
 				INFOPLIST_FILE = "TwitterGlobalTrendsSpecs/Supporting Files/TwitterUserTimelineSpecs-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -635,7 +635,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "${inherited}";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TwitterGlobalTrends/TwitterGlobalTrends-Prefix.pch";
+				GCC_PREFIX_HEADER = "TwitterGlobalTrends/TwitterUserTimeline-Prefix.pch";
 				INFOPLIST_FILE = "TwitterGlobalTrendsSpecs/Supporting Files/TwitterUserTimelineSpecs-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",

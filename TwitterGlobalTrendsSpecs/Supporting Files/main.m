@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "TGTAppDelegate.h"
+#import "TUTAppDelegate.h"
 #import "CedarApplicationDelegate.h"
 
 int main(int argc, char *argv[])

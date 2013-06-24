@@ -3,10 +3,10 @@
  */
 
 
-#import "TGTTwitterStatus.h"
+#import "TUTTwitterStatus.h"
 
 
-@implementation TGTTwitterStatus
+@implementation TUTTwitterStatus
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{};

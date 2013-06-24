@@ -9,9 +9,10 @@
 @class TGTBearerObtainer;
 
 
-@interface TGTTrendingListViewController : UIViewController <TGTBearerObtainerDelegate>
+@interface TUTUserTimelineViewController : UIViewController <TUTBearerObtainerDelegate, UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) id twitterAPIWrapper;
 @property(nonatomic, copy) NSString *bearerToken;
 @property(nonatomic, strong) TGTBearerObtainer *bearerObtainer;
 @property(nonatomic, strong) NSArray *statuses;
+@property(nonatomic, strong) UITableView *tableView;
 @end

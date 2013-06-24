@@ -8,14 +8,14 @@
 @class STTwitterAPIWrapper;
 @class TGTBearerObtainer;
 
-@protocol TGTBearerObtainerDelegate <NSObject>
+@protocol TUTBearerObtainerDelegate <NSObject>
 
 - (void)bearerObtainer:(TGTBearerObtainer *)obtainer didObtainBearerToken:(NSString *)token;
 
 @end
 
 @interface TGTBearerObtainer : NSObject
-@property(nonatomic, weak) id <TGTBearerObtainerDelegate> delegate;
+@property(nonatomic, weak) id <TUTBearerObtainerDelegate> delegate;
 @property(nonatomic, strong) STTwitterAPIWrapper *apiWrapper;
 
 + (instancetype)obtainerWithTwitterAPIWrapper:(STTwitterAPIWrapper *)wrapper;

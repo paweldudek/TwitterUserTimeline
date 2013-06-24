@@ -8,7 +8,7 @@
 #import "MTLJSONAdapter.h"
 
 
-@interface TGTTwitterStatus : MTLModel <MTLJSONSerializing>
+@interface TUTTwitterStatus : MTLModel <MTLJSONSerializing>
 @property (nonatomic, strong) NSString *text;
 
 @end

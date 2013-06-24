@@ -3,15 +3,15 @@
  */
 
 
-#import "TGTTrendingListViewController.h"
+#import "TUTUserTimelineViewController.h"
 #import "STTwitterAPIWrapper.h"
 #import "STTwitterOAuthProtocol.h"
 #import "STTwitterAppOnly.h"
 #import "TGTBearerObtainer.h"
 #import "MTLJSONAdapter.h"
-#import "TGTTwitterStatus.h"
+#import "TUTTwitterStatus.h"
 
-@implementation TGTTrendingListViewController
+@implementation TUTUserTimelineViewController
 
 - (id)init {
     self = [super init];
@@ -23,6 +23,15 @@
         self.bearerObtainer.delegate = self;
     }
     return self;
+}
+
+- (void)loadView {
+    UITableView *tableView = [[UITableView alloc] init];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    self.view = tableView;
+
+    self.tableView = tableView;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -49,12 +58,33 @@
     NSMutableArray *parsedStatuses = [NSMutableArray array];
 
     for (NSDictionary *jsonStatus in array) {
-        id status = [MTLJSONAdapter modelOfClass:[TGTTwitterStatus class] fromJSONDictionary:jsonStatus
-                                   error:nil];
+        id status = [MTLJSONAdapter modelOfClass:[TUTTwitterStatus class] fromJSONDictionary:jsonStatus
+                                           error:nil];
         [parsedStatuses addObject:status];
     }
-
     self.statuses = parsedStatuses;
+
+    [self.tableView reloadData];
+}
+
+#pragma mark - UITableView
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.statuses.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:@"Identifier"];
+    if (tableViewCell == nil) {
+        tableViewCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                               reuseIdentifier:@"Identifier"];
+    }
+    return tableViewCell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    TUTTwitterStatus *twitterStatus = self.statuses[indexPath.row];
+    cell.textLabel.text = twitterStatus.text;
 }
 
 @end

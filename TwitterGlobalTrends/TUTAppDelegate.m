@@ -1,15 +1,15 @@
 //
-//  TGTAppDelegate.m
+//  TUTAppDelegate.m
 //  TwitterGlobalTrends
 //
 //  Created by Pawel Dudek on 24/06/13.
 //  Copyright (c) 2013 Pawel Dudek. All rights reserved.
 //
 
-#import "TGTAppDelegate.h"
-#import "TGTTrendingListViewController.h"
+#import "TUTAppDelegate.h"
+#import "TUTUserTimelineViewController.h"
 
-@implementation TGTAppDelegate
+@implementation TUTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -17,7 +17,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
 
-    self.window.rootViewController = [[TGTTrendingListViewController alloc] init];
+    self.window.rootViewController = [[TUTUserTimelineViewController alloc] init];
 
     return YES;
 }

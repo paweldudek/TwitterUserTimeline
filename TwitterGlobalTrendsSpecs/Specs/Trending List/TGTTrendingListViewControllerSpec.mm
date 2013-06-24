@@ -1,19 +1,20 @@
 #import <Cedar-iOS/SpecHelper.h>
 #import <STTwitter/STTwitterAPIWrapper.h>
+#import <UIKit/UIKit.h>
 
-#import "TGTTrendingListViewController.h"
+#import "TUTUserTimelineViewController.h"
 #import "FakeTwitterAPIWrapper.h"
-#import "TGTTwitterStatus.h"
+#import "TUTTwitterStatus.h"
 
 using namespace Cedar::Matchers;
 
 SPEC_BEGIN(TGTTrendingListViewControllerSpec)
 
-describe(@"TGTTrendingListViewController", ^{
-    __block TGTTrendingListViewController *trendingListViewController;
+describe(@"TUTUserTimelineViewController", ^{
+    __block TUTUserTimelineViewController *trendingListViewController;
 
     beforeEach(^{
-        trendingListViewController = [[TGTTrendingListViewController alloc] init];
+        trendingListViewController = [[TUTUserTimelineViewController alloc] init];
     });
 
     it(@"should have a twitter client", ^{
@@ -81,7 +82,7 @@ describe(@"TGTTrendingListViewController", ^{
 
                     describe(@"first status", ^{
 
-                        __block TGTTwitterStatus *status;
+                        __block TUTTwitterStatus *status;
 
                         beforeEach(^{
                             status = statuses[0];
@@ -92,6 +93,38 @@ describe(@"TGTTrendingListViewController", ^{
                         });
                     });
                 });
+            });
+        });
+    });
+
+    describe(@"table view delegate", ^{
+        describe(@"number of rows", ^{
+
+            __block NSInteger numberOfRowsInSection;
+
+            beforeEach(^{
+                TUTTwitterStatus *status = [[TUTTwitterStatus alloc] init];
+                trendingListViewController.statuses = @[status];
+
+                numberOfRowsInSection = [trendingListViewController tableView:nil numberOfRowsInSection:0];
+            });
+
+            it(@"should equal number of statuses", ^{
+                expect(numberOfRowsInSection).to(equal(1));
+            });
+        });
+
+        describe(@"cell for row", ^{
+
+            __block UITableViewCell *tableViewCell;
+
+            beforeEach(^{
+                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+                tableViewCell = [trendingListViewController tableView:nil cellForRowAtIndexPath:indexPath];
+            });
+
+            it(@"should return a table view cell", ^{
+                expect(tableViewCell).to(be_instance_of([UITableViewCell class]));
             });
         });
     });

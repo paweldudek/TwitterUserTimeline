@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "437BAEB6177835120063204A"
-            BuildableName = "TwitterGlobalTrends.app"
+            BuildableName = "TwitterUserTimeline.app"
             BlueprintName = "TwitterUserTimeline"
             ReferencedContainer = "container:TwitterUserTimeline.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "437BAEB6177835120063204A"
-            BuildableName = "TwitterGlobalTrends.app"
+            BuildableName = "TwitterUserTimeline.app"
             BlueprintName = "TwitterUserTimeline"
             ReferencedContainer = "container:TwitterUserTimeline.xcodeproj">
          </BuildableReference>
